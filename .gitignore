@@ -1,0 +1,10 @@
+
+# Local database configuration
+config/db.php
+
+# Environment files
+.env
+
+# Temporary files
+*.log
+.DS_Store

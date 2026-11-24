@@ -1,0 +1,1 @@
+<footer class="footer"><div class="container footer-inner"><a class="brand" href="index.php"><span class="brand-mark">F</span> foody<span>spot.</span></a><p>Good food. Good mood. © <?= date("Y") ?> Foody Spot.</p></div></footer>

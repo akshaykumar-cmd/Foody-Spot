@@ -1,0 +1,8 @@
+<?php require __DIR__ . "/config/db.php"; ?>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Foody Spot | Good food, good mood</title><link rel="stylesheet" href="assets/css/style.css"></head><body>
+<?php include "includes/nav.php"; ?>
+<main>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">FRESH • FAST • DELICIOUS</span><h1>Your cravings,<br><em>delivered.</em></h1><p>Good food, made with love. Find your favourites and order in a few clicks.</p><a class="btn" href="menu.php">Explore menu <span>→</span></a><div class="hero-note">★★★★★ <small>Made for food lovers</small></div></div><div class="hero-image"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1000" alt="Delicious burger"></div></section>
+<section class="section"><div class="section-heading"><div><span class="eyebrow">WHAT SOUNDS GOOD?</span><h2>Explore our menu</h2></div><a class="text-link" href="menu.php">View all →</a></div><div class="category-grid"><?php foreach (["Burgers","Pizza","South Indian","Rice"] as $c): ?><a class="category" href="menu.php?category=<?= urlencode($c) ?>"><span><?= h($c) ?></span><b>↗</b></a><?php endforeach; ?></div></section>
+<section class="cta"><div><span class="eyebrow">YOUR NEXT FAVOURITE MEAL</span><h2>Hungry? Let's fix that.</h2><p>Browse the menu and place your first order today.</p></div><a class="btn btn-light" href="menu.php">Order now →</a></section>
+</main><?php include "includes/footer.php"; ?><script src="assets/js/script.js"></script></body></html>
